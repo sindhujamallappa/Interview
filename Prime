@@ -4,6 +4,28 @@ int prime(int n)
     int i;
     for(i=2;i<n/2;i++){
         if(n%i==0)
+            return 0; //successful
+    }
+    return 1; //not successful
+}
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    if(prime(n)==1)
+        printf("PRIME");
+    else
+        printf("NOT PRIME");
+}
+......................................................
+#include <stdio.h>
+#include <math.h>
+int prime(int n)
+{
+    int i;
+    int squareroot=sqrt(n);
+    for(i=2;i<squareroot;i++){
+        if(n%i==0)
             return 0;
     }
     return 1;
