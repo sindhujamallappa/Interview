@@ -18,6 +18,7 @@ int main()
         printf("NOT PRIME");
 }
 ......................................................
+//Using math.h lib's sqrt function
 #include <stdio.h>
 #include <math.h>
 int prime(int n)
@@ -39,3 +40,7 @@ int main()
     else
         printf("NOT PRIME");
 }
+.................................................................................
+//LUCKY PRIME
+
+
